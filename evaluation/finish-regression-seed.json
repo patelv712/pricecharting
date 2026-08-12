@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "purpose": "Seed regression cases for finish resolver development; not a performance benchmark.",
+  "limitations": [
+    "Only three manually inspected Pokemon examples.",
+    "Cases were already used during resolver development and are not holdout data.",
+    "Historical feed actions are not used as finish ground truth."
+  ],
+  "cases": [
+    {
+      "identifier": "157864951321",
+      "assigned_product_id": "12584352",
+      "expected_assigned_finish": "regular",
+      "expected_observed_finish": "reverse_holo",
+      "expected_finish_match": "mismatch",
+      "expected_replacement_product_id": "12385647",
+      "visually_determinable": true,
+      "adjudication_status": "manual_development_regression",
+      "evidence_notes": [
+        "Assigned PriceCharting notes say Non-holo deck exclusive.",
+        "Rainbow reflection is visible outside the illustration along the listing border.",
+        "Verified Reverse Holo sibling is PriceCharting product 12385647."
+      ]
+    },
+    {
+      "identifier": "127658912817",
+      "assigned_product_id": "920639",
+      "expected_assigned_finish": "holo",
+      "expected_observed_finish": "holo",
+      "expected_finish_match": "match",
+      "expected_replacement_product_id": null,
+      "visually_determinable": true,
+      "adjudication_status": "manual_development_regression",
+      "evidence_notes": [
+        "Assigned PriceCharting description says Holo.",
+        "PSA label explicitly says TYPHLOSION - HOLO."
+      ]
+    },
+    {
+      "identifier": "177979887250",
+      "assigned_product_id": "806540",
+      "expected_assigned_finish": "regular",
+      "expected_observed_finish": "cosmos_holo",
+      "expected_finish_match": "mismatch",
+      "expected_replacement_product_id": "7051675",
+      "visually_determinable": true,
+      "adjudication_status": "manual_development_regression",
+      "evidence_notes": [
+        "Listing illustration has a cosmos star/circle foil pattern.",
+        "Verified Cosmos Holo sibling is PriceCharting product 7051675."
+      ]
+    }
+  ]
+}

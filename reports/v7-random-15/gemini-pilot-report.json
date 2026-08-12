@@ -1,0 +1,110 @@
+{
+  "condition_id_metrics": {
+    "accuracy_given_condition_change_prediction": 1.0,
+    "exact_accuracy": 1.0,
+    "exact_matches": 4,
+    "support": 4
+  },
+  "decision_metrics": {
+    "accuracy": 0.75,
+    "confusion_matrix": {
+      "condition_change": {
+        "condition_change": 4,
+        "deleted": 0,
+        "ignored": 0
+      },
+      "deleted": {
+        "condition_change": 0,
+        "deleted": 1,
+        "ignored": 3
+      },
+      "ignored": {
+        "condition_change": 0,
+        "deleted": 0,
+        "ignored": 4
+      }
+    },
+    "coverage": null,
+    "covered_accuracy": null,
+    "labels": [
+      "ignored",
+      "deleted",
+      "condition_change"
+    ],
+    "macro_f1": 0.709091,
+    "metadata": {
+      "excluded_needs_modification_rows": 3,
+      "failed_rows": 0,
+      "successful_rows": 15
+    },
+    "per_class": {
+      "condition_change": {
+        "f1": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "support": 4
+      },
+      "deleted": {
+        "f1": 0.4,
+        "precision": 1.0,
+        "recall": 0.25,
+        "support": 4
+      },
+      "ignored": {
+        "f1": 0.727273,
+        "precision": 0.571429,
+        "recall": 1.0,
+        "support": 4
+      }
+    },
+    "sample_count": 12
+  },
+  "evaluation_split": "validation",
+  "failed_rows": 0,
+  "failure_types": {},
+  "historical_needs_mod_routing_proxy": {
+    "false_negative": 0,
+    "false_positive": 12,
+    "human_review_rate": 1.0,
+    "precision": 0.2,
+    "recall": 1.0,
+    "sample_count": 15,
+    "true_negative": 0,
+    "true_positive": 3
+  },
+  "mode": "multimodal",
+  "model": "gemini-3.6-flash+finish:gemini-3.1-pro-preview",
+  "prediction_counts_by_historical_target": {
+    "condition_change": {
+      "condition_change": 2,
+      "needs_modification": 2
+    },
+    "deleted": {
+      "needs_modification": 4
+    },
+    "ignored": {
+      "ignored": 1,
+      "needs_modification": 3
+    },
+    "needs_modification": {
+      "ignored": 1,
+      "needs_modification": 2
+    }
+  },
+  "requested_rows": 15,
+  "sample_count": 15,
+  "split_product_overlap": 0,
+  "successful_rows": 15,
+  "usage": {
+    "estimated_cost_usd": 0.241015,
+    "input_tokens": 131182,
+    "latency_p50_ms": 8187,
+    "latency_p95_ms": 16254,
+    "output_tokens": 5899,
+    "pricing": {
+      "input_per_million_usd": 1.5,
+      "output_per_million_usd": 7.5
+    },
+    "total_tokens": 137081
+  }
+}

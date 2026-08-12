@@ -1,0 +1,958 @@
+{
+  "condition_change_policy": "exclude rows where condition-id already equals target status",
+  "evaluation_split": "final",
+  "excluded_manifests": [
+    "reports/pilot/gemini-pilot-manifest.json",
+    "reports/pilot-v1/gemini-pilot-manifest.json",
+    "reports/pilot-v2/gemini-pilot-manifest.json",
+    "reports/pilot-v3/gemini-pilot-manifest.json"
+  ],
+  "excluded_prior_product_count": 27,
+  "mode": "multimodal",
+  "model": "gemini-3.6-flash",
+  "partition_fingerprints": {
+    "development": "a892ac4c146ed8964910e0b919a55b395b5c30752236bfcb969dcd0d26d55aae",
+    "final": "c655efd3ed2dc4957c909a53415ccd72f54d6e5d12239afac319fdede26ab38f",
+    "validation": "5e917c5b1e2f3b76b00fb70a54db5ce5acfd983224ddb7ddf15c498a080fa1b2"
+  },
+  "per_target": 5,
+  "prompt_version": "2026-07-29-product-reassignment-v2-ablation:multimodal",
+  "sample": [
+    {
+      "has_picture_url": true,
+      "identifier": "198288933085",
+      "original_condition_id": 19,
+      "product_id": "11761891",
+      "sample_index": 1,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "136774539819",
+      "original_condition_id": 1,
+      "product_id": "6142536",
+      "sample_index": 2,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "206352532765",
+      "original_condition_id": 1,
+      "product_id": "11761891",
+      "sample_index": 3,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "318407007231",
+      "original_condition_id": 1,
+      "product_id": "2324938",
+      "sample_index": 4,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "226597378714",
+      "original_condition_id": 1,
+      "product_id": "8710153",
+      "sample_index": 5,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "298295445567",
+      "original_condition_id": 3,
+      "product_id": "3457610",
+      "sample_index": 6,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "387856409165",
+      "original_condition_id": 1,
+      "product_id": "10340284",
+      "sample_index": 7,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "287361576626",
+      "original_condition_id": 20,
+      "product_id": "4447734",
+      "sample_index": 8,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "298400616077",
+      "original_condition_id": 7,
+      "product_id": "12684660",
+      "sample_index": 9,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "336600361145",
+      "original_condition_id": 21,
+      "product_id": "11012123",
+      "sample_index": 10,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "277502542298",
+      "original_condition_id": 7,
+      "product_id": "959103",
+      "sample_index": 11,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "318268665864",
+      "original_condition_id": 7,
+      "product_id": "11761891",
+      "sample_index": 12,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "117193338473",
+      "original_condition_id": 3,
+      "product_id": "844527",
+      "sample_index": 13,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "278035202230",
+      "original_condition_id": 1,
+      "product_id": "8883283",
+      "sample_index": 14,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "127879134800",
+      "original_condition_id": 1,
+      "product_id": "1099547",
+      "sample_index": 15,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "116638228859",
+      "original_condition_id": 7,
+      "product_id": "5077062",
+      "sample_index": 16,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "137329258796",
+      "original_condition_id": 7,
+      "product_id": "8710153",
+      "sample_index": 17,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "306990754781",
+      "original_condition_id": 7,
+      "product_id": "11761891",
+      "sample_index": 18,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "318287998768",
+      "original_condition_id": 1,
+      "product_id": "957165",
+      "sample_index": 19,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "236807402267",
+      "original_condition_id": 5,
+      "product_id": "11463099",
+      "sample_index": 20,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "389698345325",
+      "original_condition_id": 1,
+      "product_id": "3457594",
+      "sample_index": 21,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "398084739771",
+      "original_condition_id": 1,
+      "product_id": "11703314",
+      "sample_index": 22,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "227351475538",
+      "original_condition_id": 1,
+      "product_id": "8244604",
+      "sample_index": 23,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "298329585876",
+      "original_condition_id": 7,
+      "product_id": "8710153",
+      "sample_index": 24,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "147335217343",
+      "original_condition_id": 8,
+      "product_id": "7418422",
+      "sample_index": 25,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "257509570451",
+      "original_condition_id": 1,
+      "product_id": "4286060",
+      "sample_index": 26,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "127692662843",
+      "original_condition_id": 1,
+      "product_id": "10855379",
+      "sample_index": 27,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "178215912025",
+      "original_condition_id": 3,
+      "product_id": "844527",
+      "sample_index": 28,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "157646392169",
+      "original_condition_id": 1,
+      "product_id": "4050048",
+      "sample_index": 29,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "117097009274",
+      "original_condition_id": 7,
+      "product_id": "8710153",
+      "sample_index": 30,
+      "target": "ignored",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": false,
+      "identifier": "pVwMKIc9c1rs",
+      "original_condition_id": 1,
+      "product_id": "956339",
+      "sample_index": 31,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "406982320884",
+      "original_condition_id": 1,
+      "product_id": "963373",
+      "sample_index": 32,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "287220021730",
+      "original_condition_id": 7,
+      "product_id": "7488074",
+      "sample_index": 33,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "366439643400",
+      "original_condition_id": 1,
+      "product_id": "8710136",
+      "sample_index": 34,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "287251796749",
+      "original_condition_id": 7,
+      "product_id": "7488074",
+      "sample_index": 35,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "358186050173",
+      "original_condition_id": 1,
+      "product_id": "11262594",
+      "sample_index": 36,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "287361315070",
+      "original_condition_id": 1,
+      "product_id": "10616084",
+      "sample_index": 37,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "389789113668",
+      "original_condition_id": 7,
+      "product_id": "8710153",
+      "sample_index": 38,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "397916939206",
+      "original_condition_id": 1,
+      "product_id": "9647240",
+      "sample_index": 39,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "157864951321",
+      "original_condition_id": 1,
+      "product_id": "12584352",
+      "sample_index": 40,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "318344230586",
+      "original_condition_id": 1,
+      "product_id": "10616084",
+      "sample_index": 41,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "318045361830",
+      "original_condition_id": 7,
+      "product_id": "7488074",
+      "sample_index": 42,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "406943476110",
+      "original_condition_id": 7,
+      "product_id": "7980834",
+      "sample_index": 43,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "117226612085",
+      "original_condition_id": 1,
+      "product_id": "4934028",
+      "sample_index": 44,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "336040429686",
+      "original_condition_id": 1,
+      "product_id": "8507023",
+      "sample_index": 45,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "327119413823",
+      "original_condition_id": 1,
+      "product_id": "10223594",
+      "sample_index": 46,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "287233336983",
+      "original_condition_id": 7,
+      "product_id": "7488074",
+      "sample_index": 47,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "800158121808",
+      "original_condition_id": 1,
+      "product_id": "2782363",
+      "sample_index": 48,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "397951748396",
+      "original_condition_id": 7,
+      "product_id": "7763024",
+      "sample_index": 49,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "389630459361",
+      "original_condition_id": 1,
+      "product_id": "10472480",
+      "sample_index": 50,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "267637169529",
+      "original_condition_id": 1,
+      "product_id": "6235696",
+      "sample_index": 51,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "318265494656",
+      "original_condition_id": 1,
+      "product_id": "7488074",
+      "sample_index": 52,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "168306429330",
+      "original_condition_id": 1,
+      "product_id": "5888291",
+      "sample_index": 53,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "306918676367",
+      "original_condition_id": 1,
+      "product_id": "10665679",
+      "sample_index": 54,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "366387028588",
+      "original_condition_id": 1,
+      "product_id": "4334493",
+      "sample_index": 55,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "127658912817",
+      "original_condition_id": 7,
+      "product_id": "920639",
+      "sample_index": 56,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "398035803768",
+      "original_condition_id": 1,
+      "product_id": "11815969",
+      "sample_index": 57,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "358185393783",
+      "original_condition_id": 1,
+      "product_id": "2183378",
+      "sample_index": 58,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "277278272084",
+      "original_condition_id": 7,
+      "product_id": "3970160",
+      "sample_index": 59,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "336601750476",
+      "original_condition_id": 1,
+      "product_id": "10855380",
+      "sample_index": 60,
+      "target": "deleted",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "127514767763",
+      "original_condition_id": 1,
+      "product_id": "1341528",
+      "sample_index": 61,
+      "target": "condition_change",
+      "target_condition_id": 5
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "206294056460",
+      "original_condition_id": 1,
+      "product_id": "2512922",
+      "sample_index": 62,
+      "target": "condition_change",
+      "target_condition_id": 5
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "287378126818",
+      "original_condition_id": 1,
+      "product_id": "5326048",
+      "sample_index": 63,
+      "target": "condition_change",
+      "target_condition_id": 3
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "306883006831",
+      "original_condition_id": 1,
+      "product_id": "10367804",
+      "sample_index": 64,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "168350693927",
+      "original_condition_id": 1,
+      "product_id": "7108727",
+      "sample_index": 65,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "406943655803",
+      "original_condition_id": 1,
+      "product_id": "889391",
+      "sample_index": 66,
+      "target": "condition_change",
+      "target_condition_id": 2
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "406897620990",
+      "original_condition_id": 1,
+      "product_id": "3439010",
+      "sample_index": 67,
+      "target": "condition_change",
+      "target_condition_id": 5
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "377036145095",
+      "original_condition_id": 1,
+      "product_id": "4447684",
+      "sample_index": 68,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "327103689535",
+      "original_condition_id": 1,
+      "product_id": "963286",
+      "sample_index": 69,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "188427909101",
+      "original_condition_id": 1,
+      "product_id": "7800228",
+      "sample_index": 70,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "318322613171",
+      "original_condition_id": 1,
+      "product_id": "10852461",
+      "sample_index": 71,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "198322103040",
+      "original_condition_id": 1,
+      "product_id": "4334493",
+      "sample_index": 72,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "405107918595",
+      "original_condition_id": 1,
+      "product_id": "3457573",
+      "sample_index": 73,
+      "target": "condition_change",
+      "target_condition_id": 5
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "157728807867",
+      "original_condition_id": 1,
+      "product_id": "7641270",
+      "sample_index": 74,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "188166657897",
+      "original_condition_id": 5,
+      "product_id": "4277298",
+      "sample_index": 75,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "167789011012",
+      "original_condition_id": 1,
+      "product_id": "5605719",
+      "sample_index": 76,
+      "target": "condition_change",
+      "target_condition_id": 6
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "257506597052",
+      "original_condition_id": 1,
+      "product_id": "11761891",
+      "sample_index": 77,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "327103491602",
+      "original_condition_id": 1,
+      "product_id": "5326208",
+      "sample_index": 78,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "257285651450",
+      "original_condition_id": 1,
+      "product_id": "4276971",
+      "sample_index": 79,
+      "target": "condition_change",
+      "target_condition_id": 2
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "318305378519",
+      "original_condition_id": 1,
+      "product_id": "8871343",
+      "sample_index": 80,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "389983187099",
+      "original_condition_id": 1,
+      "product_id": "3470201",
+      "sample_index": 81,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "336597678798",
+      "original_condition_id": 1,
+      "product_id": "8871275",
+      "sample_index": 82,
+      "target": "condition_change",
+      "target_condition_id": 5
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "306814709123",
+      "original_condition_id": 1,
+      "product_id": "11539199",
+      "sample_index": 83,
+      "target": "condition_change",
+      "target_condition_id": 5
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "318382638368",
+      "original_condition_id": 1,
+      "product_id": "6235169",
+      "sample_index": 84,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "389217989746",
+      "original_condition_id": 1,
+      "product_id": "5326208",
+      "sample_index": 85,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "236749092609",
+      "original_condition_id": 1,
+      "product_id": "12170998",
+      "sample_index": 86,
+      "target": "condition_change",
+      "target_condition_id": 8
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "389903240892",
+      "original_condition_id": 1,
+      "product_id": "12171007",
+      "sample_index": 87,
+      "target": "condition_change",
+      "target_condition_id": 6
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "117153370436",
+      "original_condition_id": 1,
+      "product_id": "10792435",
+      "sample_index": 88,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "117234028407",
+      "original_condition_id": 1,
+      "product_id": "11634338",
+      "sample_index": 89,
+      "target": "condition_change",
+      "target_condition_id": 8
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "226838949922",
+      "original_condition_id": 1,
+      "product_id": "7903784",
+      "sample_index": 90,
+      "target": "condition_change",
+      "target_condition_id": 7
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "287265005361",
+      "original_condition_id": 5,
+      "product_id": "2427452",
+      "sample_index": 91,
+      "target": "needs_modification",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "406912009863",
+      "original_condition_id": 7,
+      "product_id": "4768542",
+      "sample_index": 92,
+      "target": "needs_modification",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "117216365650",
+      "original_condition_id": 1,
+      "product_id": "3346511",
+      "sample_index": 93,
+      "target": "needs_modification",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "117128811891",
+      "original_condition_id": 7,
+      "product_id": "3438430",
+      "sample_index": 94,
+      "target": "needs_modification",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "287324714388",
+      "original_condition_id": 1,
+      "product_id": "8091540",
+      "sample_index": 95,
+      "target": "needs_modification",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "406945485080",
+      "original_condition_id": 7,
+      "product_id": "4246445",
+      "sample_index": 96,
+      "target": "needs_modification",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "257364210235",
+      "original_condition_id": 5,
+      "product_id": "5923877",
+      "sample_index": 97,
+      "target": "needs_modification",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "397952960208",
+      "original_condition_id": 1,
+      "product_id": "11129794",
+      "sample_index": 98,
+      "target": "needs_modification",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "405073528566",
+      "original_condition_id": 1,
+      "product_id": "6866236",
+      "sample_index": 99,
+      "target": "needs_modification",
+      "target_condition_id": null
+    },
+    {
+      "has_picture_url": true,
+      "identifier": "117117203720",
+      "original_condition_id": 7,
+      "product_id": "12054378",
+      "sample_index": 100,
+      "target": "needs_modification",
+      "target_condition_id": null
+    }
+  ],
+  "sample_count": 100,
+  "sample_size": 100,
+  "source_file_sha256": "56223a94d8129efbfbd06d226f74469f05d14c01f1a0f604b4822e4d213d8294",
+  "split": {
+    "development_products": 1904,
+    "development_rows": 6566,
+    "development_targets": {
+      "condition_change": 415,
+      "deleted": 2607,
+      "ignored": 3421,
+      "needs_modification": 123
+    },
+    "final_products": 554,
+    "final_rows": 1903,
+    "final_targets": {
+      "condition_change": 139,
+      "deleted": 606,
+      "ignored": 1132,
+      "needs_modification": 26
+    },
+    "product_overlap": 0,
+    "validation_products": 571,
+    "validation_rows": 1531,
+    "validation_targets": {
+      "condition_change": 123,
+      "deleted": 452,
+      "ignored": 928,
+      "needs_modification": 28
+    }
+  },
+  "target_counts": {
+    "condition_change": 30,
+    "deleted": 30,
+    "ignored": 30,
+    "needs_modification": 10
+  }
+}

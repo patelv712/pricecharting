@@ -1,0 +1,47 @@
+{
+  "policy_version": "2026-08-10-targeted-finish-v7",
+  "specialist_prompt_version": "2026-08-10-targeted-finish-v2",
+  "resolver_policy_version": "2026-08-10-finish-resolution-v2",
+  "status": "live_integration_smoke_only_not_performance_evaluation",
+  "cost_note": "successful responses only; timed-out attempts may also be billed",
+  "case_count": 2,
+  "total_successful_response_estimated_cost_usd": 0.079792,
+  "cases": [
+    {
+      "identifier": "127658912817",
+      "assigned_finish": "holo",
+      "raw_visual_finish": "cosmos_holo",
+      "observed_identity_finish": "holo",
+      "finish_match": "match",
+      "needs_modification": false,
+      "replacement_product_id": null,
+      "specialist_attempt_count": 1,
+      "specialist_latency_ms": 29581,
+      "specialist_input_tokens": 9560,
+      "specialist_visible_output_tokens": 89,
+      "specialist_billable_output_tokens": 2322,
+      "specialist_total_tokens": 11882,
+      "specialist_successful_response_estimated_cost_usd": 0.046984,
+      "main_latency_ms": 6135,
+      "route": "human_review"
+    },
+    {
+      "identifier": "157864951321",
+      "assigned_finish": "regular",
+      "raw_visual_finish": "reverse_holo",
+      "observed_identity_finish": "reverse_holo",
+      "finish_match": "mismatch",
+      "needs_modification": true,
+      "replacement_product_id": "12385647",
+      "specialist_attempt_count": 1,
+      "specialist_latency_ms": 16034,
+      "specialist_input_tokens": 8436,
+      "specialist_visible_output_tokens": 98,
+      "specialist_billable_output_tokens": 1328,
+      "specialist_total_tokens": 9764,
+      "specialist_successful_response_estimated_cost_usd": 0.032808,
+      "main_latency_ms": 9809,
+      "route": "human_review"
+    }
+  ]
+}

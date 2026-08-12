@@ -1,0 +1,119 @@
+{
+  "assigned_product": {
+    "catalog": {
+      "card_number": "#16",
+      "description": "Holo Ungraded $18.03",
+      "error": null,
+      "image": {
+        "available": true,
+        "byte_length": 11991,
+        "content_type": "image/jpeg",
+        "error": null,
+        "sha256": "1b7e4dbb847407a6cebe8c24a30e3b05c1cf86fe3bb75624f438da2d2b649bbd",
+        "usable": true
+      },
+      "image_url": "https://storage.googleapis.com/images.pricecharting.com/3hgycxylb5bydfnr/240.jpg",
+      "notes": "none",
+      "page_url": "https://www.pricecharting.com/game/pokemon-mysterious-treasures/typhlosion-16",
+      "product_id_verified": true,
+      "schema_version": 2
+    },
+    "product_id": "920639",
+    "product_name": "Typhlosion #16"
+  },
+  "candidate_finishes": [
+    {
+      "catalog_verified": true,
+      "product_id": "762858",
+      "product_name": "Riolu [Holo] #16"
+    },
+    {
+      "catalog_verified": false,
+      "product_id": "920639",
+      "product_name": "Typhlosion #16"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "6001216",
+      "product_name": "Typhlosion [Holo] #17/P"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "920634",
+      "product_name": "Lumineon #11"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "7374563",
+      "product_name": "Treecko [Holo] #16/ ADV-P"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "920764",
+      "product_name": "Typhlosion [Reverse Holo] #16"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "3438699",
+      "product_name": "Arcanine #16"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "3460028",
+      "product_name": "Typhlosion #16"
+    }
+  ],
+  "identifier": "127658912817",
+  "prompt_version": "2026-08-10-targeted-finish-v1",
+  "resolution": {
+    "assigned_finish": "holo",
+    "evidence": [
+      {
+        "fact": "Assigned catalog explicitly identifies holo.",
+        "finish": "holo",
+        "source": "assigned_catalog_metadata"
+      },
+      {
+        "fact": "Listing title explicitly identifies holo.",
+        "finish": "holo",
+        "source": "listing_title"
+      }
+    ],
+    "finish_match": "match",
+    "image_features": {
+      "aspect_ratio": 0.673774,
+      "card_like_aspect": true,
+      "crop_paths": {
+        "card_body": "cache/finish-crops/c2f29b2f01a6/card_body.jpg",
+        "full": "cache/finish-crops/c2f29b2f01a6/full.jpg",
+        "illustration": "cache/finish-crops/c2f29b2f01a6/illustration.jpg",
+        "outer_border": "cache/finish-crops/c2f29b2f01a6/outer_border.jpg"
+      },
+      "error": null,
+      "height": 1407,
+      "highlight_fraction": 0.003225,
+      "image_sha256": "c2f29b2f01a6",
+      "luminance_stdev": 0.241824,
+      "saturation_mean": 0.262042,
+      "saturation_stdev": 0.27717,
+      "width": 948
+    },
+    "observed_finish": "holo",
+    "rationale_codes": [
+      "explicit_listing_finish",
+      "finish_match"
+    ],
+    "replacement_product_id": null,
+    "requires_human_review": true,
+    "visual": {
+      "evidence_regions": [
+        "illustration",
+        "slab_label"
+      ],
+      "matching_candidate_id": null,
+      "observed_finish": "holo",
+      "reason": "The illustration window clearly displays a holographic sparkle pattern, while the rest of the card body is non-reflective. The PSA slab label also explicitly states 'HOLO'. Since there is no eligible candidate for the English Typhlosion #16 with a holo finish, no matching candidate ID is provided.",
+      "visually_determinable": true
+    }
+  }
+}

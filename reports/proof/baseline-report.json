@@ -1,0 +1,151 @@
+{
+  "condition_id_metrics": {
+    "accuracy_given_condition_change_prediction": 0.953488,
+    "exact_accuracy": 0.186364,
+    "exact_matches": 41,
+    "support": 220
+  },
+  "data_profile": {
+    "condition_counts": {
+      "1": 5294,
+      "10": 40,
+      "13": 40,
+      "14": 54,
+      "15": 69,
+      "16": 102,
+      "17": 207,
+      "18": 4,
+      "19": 189,
+      "2": 364,
+      "20": 35,
+      "21": 65,
+      "22": 17,
+      "3": 154,
+      "5": 725,
+      "6": 182,
+      "7": 2318,
+      "8": 93,
+      "9": 48
+    },
+    "image_coverage": 0.9849,
+    "largest_product_group": 203,
+    "missing_images": 151,
+    "review_date_max": "2026-06-24T14:38:39Z",
+    "review_date_min": "2026-06-07T03:33:59Z",
+    "row_count": 10000,
+    "rows_in_repeated_product_groups": 8246,
+    "sale_amount_max": 32570000,
+    "sale_amount_min": 1,
+    "score_max": 725,
+    "score_min": 100,
+    "status_counts": {
+      "boxandmanual": 4,
+      "boxonly": 61,
+      "cib": 42,
+      "deleted": 3665,
+      "gradedcib": 4,
+      "gradednew": 275,
+      "gradeeighteen": 1,
+      "gradefive": 12,
+      "gradefour": 5,
+      "gradeseventeen": 90,
+      "gradesix": 20,
+      "ignored": 4565,
+      "looseandbox": 21,
+      "looseandmanual": 5,
+      "manualonly": 752,
+      "needsMod": 177,
+      "new": 147,
+      "used": 154
+    },
+    "target_counts": {
+      "condition_change": 677,
+      "deleted": 3665,
+      "ignored": 5481,
+      "needs_modification": 177
+    },
+    "unique_products": 3029
+  },
+  "decision_metrics": {
+    "accuracy": 0.595752,
+    "confusion_matrix": {
+      "condition_change": {
+        "condition_change": 43,
+        "deleted": 3,
+        "ignored": 174
+      },
+      "deleted": {
+        "condition_change": 8,
+        "deleted": 93,
+        "ignored": 946
+      },
+      "ignored": {
+        "condition_change": 6,
+        "deleted": 62,
+        "ignored": 1631
+      }
+    },
+    "coverage": 0.014498,
+    "covered_accuracy": 0.790698,
+    "labels": [
+      "ignored",
+      "deleted",
+      "condition_change"
+    ],
+    "macro_f1": 0.399287,
+    "metadata": {
+      "excluded_needs_modification_rows": 50
+    },
+    "per_class": {
+      "condition_change": {
+        "f1": 0.310469,
+        "precision": 0.754386,
+        "recall": 0.195455,
+        "support": 220
+      },
+      "deleted": {
+        "f1": 0.154357,
+        "precision": 0.588608,
+        "recall": 0.088825,
+        "support": 1047
+      },
+      "ignored": {
+        "f1": 0.733034,
+        "precision": 0.592875,
+        "recall": 0.959976,
+        "support": 1699
+      }
+    },
+    "sample_count": 2966
+  },
+  "historical_needs_mod_routing_proxy": {
+    "false_negative": 1,
+    "false_positive": 2923,
+    "human_review_rate": 0.985411,
+    "precision": 0.016487,
+    "recall": 0.98,
+    "sample_count": 3016,
+    "true_negative": 43,
+    "true_positive": 49
+  },
+  "price_guide_products_loaded": 0,
+  "split": {
+    "development_products": 2174,
+    "development_rows": 6984,
+    "development_targets": {
+      "condition_change": 457,
+      "deleted": 2618,
+      "ignored": 3782,
+      "needs_modification": 127
+    },
+    "product_overlap": 0,
+    "test_products": 855,
+    "test_rows": 3016,
+    "test_targets": {
+      "condition_change": 220,
+      "deleted": 1047,
+      "ignored": 1699,
+      "needs_modification": 50
+    }
+  }
+}

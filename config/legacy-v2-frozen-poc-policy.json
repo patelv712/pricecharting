@@ -1,0 +1,39 @@
+{
+  "superseded": true,
+  "superseded_reason": "AI-generated confidence and model-selected routing removed in v3",
+  "frozen_at": "2026-07-29",
+  "model": "gemini-3.6-flash",
+  "mode": "multimodal",
+  "prompt_version": "2026-07-29-product-reassignment-v2-ablation",
+  "system_prompt_sha256": "bc42a086e903778ca249825e0e989a735d851c3838574c556b2838941569c784",
+  "source_file_sha256": "56223a94d8129efbfbd06d226f74469f05d14c01f1a0f604b4822e4d213d8294",
+  "final_partition_fingerprint": "c655efd3ed2dc4957c909a53415ccd72f54d6e5d12239afac319fdede26ab38f",
+  "final_sample_size": 100,
+  "final_target_profile": {
+    "ignored": 30,
+    "deleted": 30,
+    "condition_change": 30,
+    "needs_modification": 10
+  },
+  "routing_policy": {
+    "product_or_variant_reassignment": "needs_modification_and_human_review",
+    "insufficient_or_conflicting_evidence": "needs_modification_and_human_review",
+    "invalid_comparable_sale": "deleted",
+    "same_product_wrong_condition": "condition_change",
+    "poc_automatic_mutation_enabled": false,
+    "candidate_future_auto_accept_confidence": 0.98,
+    "candidate_threshold_status": "validation_only_not_approved"
+  },
+  "evaluation_policy": {
+    "needs_modification_excluded_from_resolved_decision_accuracy": true,
+    "needs_modification_used_as_historical_routing_proxy_only": true,
+    "raw_confidence_treated_as_calibrated_probability": false,
+    "final_holdout_may_be_run_once_without_further_tuning": true
+  },
+  "validation_artifact_sha256": {
+    "rules_report": "90c0dc08a48da3f5b8e7855d52abf499d58d4a646e365f9ca7736806e5f286ec",
+    "text_only_report": "e2582ecc02955cd414707ca6ab34b0175b38b04eb11b4fd3d20e84be1520f000",
+    "multimodal_report": "00bf3a853c6d8f37e3d7d4f0e5aff4f6f9ebe95e3df3098bdd2a5c47e7fc27d6",
+    "comparison": "2f8ccf6af1df94ab5532076bf8ce4632aa0f3354c99b896bab9ccc64314ef67e"
+  }
+}

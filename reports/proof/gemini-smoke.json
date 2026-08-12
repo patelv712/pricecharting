@@ -1,0 +1,95 @@
+{
+  "evidence": {
+    "derived": {
+      "deletion_flags": [
+        "non_card_item"
+      ],
+      "evidence_count": 3,
+      "extracted_grade": null,
+      "extracted_grading_company": null,
+      "missing_product_tokens": [
+        "88"
+      ],
+      "nearest_condition_id": 1,
+      "nearest_condition_ratio": 87.2,
+      "original_condition_price": 25,
+      "second_nearest_condition_ratio": null,
+      "title_product_overlap": 0.833333,
+      "title_supported_condition_id": null
+    },
+    "image": {
+      "available": true,
+      "byte_length": 41243,
+      "cache_path": "cache/images/389374866266-da861bc01c5e.img",
+      "content_type": "image/jpeg",
+      "error": null,
+      "sha256": "dc93fcfc44a527f78cad8bb45ebeacc59967bda36e0a045dbe4b88a82cdd52c7",
+      "usable": true
+    },
+    "product": {
+      "console_name": "Pokemon Chinese 151 Collect",
+      "genre": "Chinese Pokemon Card",
+      "identifiers": {},
+      "price_anchors": {
+        "1": 25
+      },
+      "product_id": "8709029",
+      "product_name": "Grimer #88",
+      "release_date": "2025-01-17",
+      "sales_volume": 0,
+      "source": "api-cache"
+    },
+    "sale": {
+      "broad_category": "trading-cards",
+      "identifier": "389374866266",
+      "most_recent_report": "2026-06-11T04:51:17Z",
+      "original_condition_id": 1,
+      "picture_url": "https://i.ebayimg.com/images/g/uigAAeSweTlpSWOa/s-l1600.jpg",
+      "product_id": "8709029",
+      "product_title": "Grimer #88",
+      "review_date": "2026-06-24T14:38:39Z",
+      "sale_amount_pennies": 2180,
+      "sale_title": "Pokemon TCG Grimer card 151C-088/151 & Figure \u201cCollect 151\u201d Figure Set Chinese Chinese 151C-088/151",
+      "score": 275
+    }
+  },
+  "identifier": "389374866266",
+  "result": {
+    "consistency": {
+      "image_vs_metadata": "different",
+      "price_vs_condition": "consistent",
+      "title_vs_image": "consistent"
+    },
+    "decision": "deleted",
+    "estimated_cost_usd": null,
+    "final_confidence": 0.95,
+    "input_tokens": 2422,
+    "latency_ms": 7473,
+    "model": "gemini-3.6-flash",
+    "needs_modification": false,
+    "output_tokens": 315,
+    "predicted_condition_id": null,
+    "provider": "openai-compatible",
+    "rationale_codes": [
+      "non_card_item",
+      "bundle"
+    ],
+    "raw_confidence": 0.95,
+    "reason": "The listing is for a figure set bundle containing both a toy figure and a card, making it a non-card merchandise item/bundle rather than a standard single trading card sale.",
+    "route": "accept",
+    "visual": {
+      "cards_visible_count": 1,
+      "damage_signs": false,
+      "finish": null,
+      "grading_company": null,
+      "image_usable": true,
+      "is_custom_or_proxy": false,
+      "is_graded_slab": false,
+      "is_lot_or_bundle": true,
+      "language_markers": [
+        "zh"
+      ],
+      "visible_grade": null
+    }
+  }
+}

@@ -1,0 +1,352 @@
+{
+  "evidence": {
+    "catalog": {
+      "card_number": "none",
+      "description": "none Ungraded $342.66",
+      "error": null,
+      "image": {
+        "available": true,
+        "byte_length": 10848,
+        "cache_path": "cache/images/catalog-3269421-3b224cb6ee67.img",
+        "content_type": "image/jpeg",
+        "error": null,
+        "sha256": "7cb4cae4ac717f5961fd93f7ce945dfc628746713169ac92df01a1de7de48728",
+        "usable": true
+      },
+      "image_url": "https://storage.googleapis.com/images.pricecharting.com/a2d63b1e816de988440788dbffbb8d7c90c5d0dab964bd1a914f8a0dbe76fa7e/240.jpg",
+      "notes": "none",
+      "page_url": "https://www.pricecharting.com/game/pokemon-base-set-2/booster-pack",
+      "product_id_verified": true,
+      "schema_version": 2
+    },
+    "derived": {
+      "catalog_identity_markers": {},
+      "deletion_flags": [],
+      "evidence_count": 3,
+      "extracted_grade": null,
+      "extracted_grading_company": "PSA",
+      "identity_conflicts": [],
+      "identity_warnings": [
+        "finish_catalog_unspecified:sale=foil"
+      ],
+      "missing_product_tokens": [],
+      "nearest_condition_id": 7,
+      "nearest_condition_ratio": 1.114033,
+      "original_condition_price": 34266,
+      "sale_identity_markers": {
+        "finish": [
+          "foil"
+        ]
+      },
+      "second_nearest_condition_ratio": 1.167142,
+      "title_product_overlap": 1.0,
+      "title_supported_condition_id": null
+    },
+    "finish_resolution": {
+      "applicable": false,
+      "assigned_finish": "unknown",
+      "evidence": [],
+      "finish_match": "unknown",
+      "image_features": null,
+      "observed_finish": "unknown",
+      "policy_version": "2026-08-10-finish-resolution-v5",
+      "provider_metadata": null,
+      "rationale_codes": [
+        "finish_not_applicable_non_single_card"
+      ],
+      "replacement_product_id": null,
+      "requires_human_review": true,
+      "verification_required": false,
+      "visual": null
+    },
+    "image": {
+      "available": true,
+      "byte_length": 576633,
+      "cache_path": "cache/images/287314443807-ee62567eab35.img",
+      "content_type": "image/jpeg",
+      "error": null,
+      "sha256": "7956d7645bb6cfc4cd59c7ddd21934df716c33a892116c95cf0b013bfc9fa151",
+      "usable": true
+    },
+    "product": {
+      "console_name": "Pokemon Base Set 2",
+      "genre": "Sealed Product",
+      "identifiers": {
+        "epid": "3269421"
+      },
+      "price_anchors": {
+        "1": 34266,
+        "17": 50800,
+        "18": 50800,
+        "2": 24088,
+        "3": 18600,
+        "5": 61306,
+        "6": 67400,
+        "7": 84677,
+        "8": 110100
+      },
+      "product_id": "3269421",
+      "product_name": "Booster Pack",
+      "release_date": null,
+      "sales_volume": 232,
+      "source": "api-cache"
+    },
+    "replacement_candidates": [
+      {
+        "catalog": {
+          "card_number": "none",
+          "description": "A Pok\u00e9mon Base Set pack is a collectible card set from the original Pok\u00e9mon Trading Card Game (TCG) series, released in 1999. The Base Set pack contains a random selection of Pok\u00e9mon cards, Trainer cards, and Energy cards. This set was the very first release of the Pok\u00e9mon TCG, introducing players worldwide to the exciting world of the card game. In each pack, players can encounter iconic Pok\u00e9mon such as Pikachu, Charizard, and Blastoise, as well as other beloved characters from the Pok\u00e9mon franchise. Base Set packs are often sought after by collectors due to their historical significance and nostalgic appeal. Ungraded $788.00",
+          "error": null,
+          "image": {
+            "available": true,
+            "byte_length": 12193,
+            "cache_path": "cache/images/catalog-2189363-593a4e0cec9d.img",
+            "content_type": "image/jpeg",
+            "error": null,
+            "sha256": "210a0f24d02cd450277c3c0d17d4cdb54fbbb5d70af1ed75387182b251238dd4",
+            "usable": true
+          },
+          "image_url": "https://storage.googleapis.com/images.pricecharting.com/765dcc4e01db9def647f93c2ed938f9dfdd3b20619e6b1aadbe30f7486fb2800/240.jpg",
+          "notes": "Charizard Art",
+          "page_url": "https://www.pricecharting.com/game/pokemon-base-set/booster-pack",
+          "product_id_verified": true,
+          "schema_version": 2
+        },
+        "console_name": "Pokemon Base Set",
+        "product_id": "2189363",
+        "product_name": "Booster Pack",
+        "retrieval_score": 32,
+        "score_components": [
+          "token_f1=32/60"
+        ]
+      },
+      {
+        "catalog": null,
+        "console_name": "Pokemon Base Set 2",
+        "product_id": "3269421",
+        "product_name": "Booster Pack",
+        "retrieval_score": 32,
+        "score_components": [
+          "token_f1=32/60",
+          "currently_assigned"
+        ]
+      },
+      {
+        "catalog": {
+          "card_number": "#130",
+          "description": "none Ungraded $34.09",
+          "error": null,
+          "image": {
+            "available": true,
+            "byte_length": 13368,
+            "cache_path": "cache/images/catalog-3975871-946e5653776a.img",
+            "content_type": "image/jpeg",
+            "error": null,
+            "sha256": "f6591354c589e4bcaa4b89f429205494aecbe3c4901e18aee371a0b4713e0c1a",
+            "usable": true
+          },
+          "image_url": "https://storage.googleapis.com/images.pricecharting.com/de6d8eb7e4f18bf62a3b2837df530e87a262f095fe0f241250cb30da63e7e21f/240.jpg",
+          "notes": "none",
+          "page_url": "https://www.pricecharting.com/game/pokemon-2000-topps-tv/gyarados-foil-130",
+          "product_id_verified": true,
+          "schema_version": 2
+        },
+        "console_name": "Pokemon 2000 Topps TV",
+        "product_id": "3975871",
+        "product_name": "Gyarados [Foil] #130",
+        "retrieval_score": 31,
+        "score_components": [
+          "token_f1=23/60",
+          "finish_match=+8"
+        ]
+      },
+      {
+        "catalog": {
+          "card_number": "#130",
+          "description": "none Ungraded $102.50",
+          "error": null,
+          "image": {
+            "available": true,
+            "byte_length": 18269,
+            "cache_path": "cache/images/catalog-3975872-ced264832323.img",
+            "content_type": "image/jpeg",
+            "error": null,
+            "sha256": "e617864e28fc219f83e3fe0c9e0818cea72cfa31cc6bd128da2efb8e473b32bf",
+            "usable": true
+          },
+          "image_url": "https://storage.googleapis.com/images.pricecharting.com/reff7a1373e15cc278d1634600ee6625c25e4e92aa7dda307ef3e81c178edba4c25/240.jpg",
+          "notes": "none",
+          "page_url": "https://www.pricecharting.com/game/pokemon-2000-topps-tv/gyarados-rainbow-foil-130",
+          "product_id_verified": true,
+          "schema_version": 2
+        },
+        "console_name": "Pokemon 2000 Topps TV",
+        "product_id": "3975872",
+        "product_name": "Gyarados [Rainbow Foil] #130",
+        "retrieval_score": 30,
+        "score_components": [
+          "token_f1=22/60",
+          "finish_match=+8"
+        ]
+      },
+      {
+        "catalog": {
+          "card_number": "none",
+          "description": "none Ungraded $2,100.00",
+          "error": null,
+          "image": {
+            "available": true,
+            "byte_length": 11987,
+            "cache_path": "cache/images/catalog-6245979-40437642726a.img",
+            "content_type": "image/jpeg",
+            "error": null,
+            "sha256": "02869ea268a86f60ecd0d31527aac532b7219ae456d6deadeefd9833e058d109",
+            "usable": true
+          },
+          "image_url": "https://storage.googleapis.com/images.pricecharting.com/401fd35483a4354ada609a9f46726882cea1eb9f2eccbbf37fb8b74d38b7245e/240.jpg",
+          "notes": "Copyright dates 1995, 96, 98, 99",
+          "page_url": "https://www.pricecharting.com/game/pokemon-base-set/booster-pack-shadowless",
+          "product_id_verified": true,
+          "schema_version": 2
+        },
+        "console_name": "Pokemon Base Set",
+        "product_id": "6245979",
+        "product_name": "Booster Pack [Shadowless]",
+        "retrieval_score": 30,
+        "score_components": [
+          "token_f1=30/60"
+        ]
+      },
+      {
+        "catalog": null,
+        "console_name": "Pokemon Base Set",
+        "product_id": "6942600",
+        "product_name": "Gyarados [1999-2000] #6",
+        "retrieval_score": 30,
+        "score_components": [
+          "token_f1=30/60"
+        ]
+      },
+      {
+        "catalog": null,
+        "console_name": "Pokemon Base Set",
+        "product_id": "2189365",
+        "product_name": "Booster Pack [1st Edition]",
+        "retrieval_score": 29,
+        "score_components": [
+          "token_f1=29/60"
+        ]
+      },
+      {
+        "catalog": null,
+        "console_name": "Pokemon Base Set",
+        "product_id": "3465887",
+        "product_name": "Booster Pack [Triangle Error]",
+        "retrieval_score": 29,
+        "score_components": [
+          "token_f1=29/60"
+        ]
+      }
+    ],
+    "sale": {
+      "broad_category": "trading-cards",
+      "identifier": "287314443807",
+      "most_recent_report": "2026-05-27T15:47:12Z",
+      "original_condition_id": 1,
+      "picture_url": "https://i.ebayimg.com/images/g/BocAAeSw9yVp-RnX/s-l1600.jpg",
+      "product_id": "3269421",
+      "product_title": "Booster Pack",
+      "review_date": "2026-06-09T13:21:51Z",
+      "sale_amount_pennies": 94333,
+      "sale_title": "2000 Vintage WOTC Pokemon Base Set 2 Foil Booster pack Gyarados PSA GEM MT 10",
+      "score": 427
+    }
+  },
+  "identifier": "287314443807",
+  "result": {
+    "catalog_comparison": "match",
+    "consistency": {
+      "image_vs_metadata": "match",
+      "price_vs_condition": "match",
+      "title_vs_image": "match"
+    },
+    "decision": "condition_change",
+    "deterministic_evidence": {
+      "catalog_identity_markers": {},
+      "catalog_image_available": true,
+      "catalog_price_anchor_count": 9,
+      "catalog_product_id_verified": true,
+      "deletion_flags": [],
+      "identity_conflicts": [],
+      "identity_warnings": [
+        "finish_catalog_unspecified:sale=foil"
+      ],
+      "image_available": true,
+      "image_usable": true,
+      "sale_identity_markers": {
+        "finish": [
+          "foil"
+        ]
+      },
+      "title_product_overlap": 1.0,
+      "title_supported_condition_id": null
+    },
+    "estimated_cost_usd": null,
+    "finish_resolution": {
+      "applicable": false,
+      "assigned_finish": "unknown",
+      "evidence": [],
+      "finish_match": "unknown",
+      "image_features": null,
+      "observed_finish": "unknown",
+      "policy_version": "2026-08-10-finish-resolution-v5",
+      "provider_metadata": null,
+      "rationale_codes": [
+        "finish_not_applicable_non_single_card"
+      ],
+      "replacement_product_id": null,
+      "requires_human_review": true,
+      "verification_required": false,
+      "visual": null
+    },
+    "identity_comparison": {
+      "artwork": "uncertain",
+      "event_or_release": "match",
+      "finish": "uncertain",
+      "language": "match",
+      "object_type": "match",
+      "printing_or_parallel": "match",
+      "quantity_and_packaging": "match",
+      "set_and_card_number": "match"
+    },
+    "input_tokens": 10681,
+    "latency_ms": 8010,
+    "model": "gemini-3.6-flash",
+    "needs_modification": false,
+    "output_tokens": 417,
+    "predicted_condition_id": 7,
+    "provider": "google-gemini-openai-compatible-transport",
+    "rationale_codes": [
+      "graded_slab_mismatch_condition",
+      "booster_pack_art_variant_generic"
+    ],
+    "reason": "The item is a PSA 10 graded Pokemon Base Set 2 Gyarados artwork booster pack, matching the assigned product. The recorded condition was incorrectly set to Ungraded (1) instead of PSA 10 (7).",
+    "replacement_comparison": "not_available",
+    "replacement_product_id": null,
+    "route": "human_review",
+    "visual": {
+      "cards_visible_count": null,
+      "damage_signs": false,
+      "finish": null,
+      "grading_company": "PSA",
+      "image_usable": true,
+      "is_custom_or_proxy": false,
+      "is_graded_slab": true,
+      "is_lot_or_bundle": false,
+      "language_markers": [
+        "English"
+      ],
+      "visible_grade": "10"
+    }
+  }
+}

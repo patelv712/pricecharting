@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f1eee4">
+    <title>PriceCharting Sale Review</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/app.css?v=20260810-12">
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="PriceCharting Sale Review home">
+        <span class="brand-mark">PC</span>
+        <span>
+          <strong>Sale Review</strong>
+          <small>Evidence console</small>
+        </span>
+      </a>
+      <div class="topbar-actions">
+        <span id="systemStatus" class="system-status">Checking services</span>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <aside class="run-rail">
+        <div class="rail-heading">
+          <span>Runs</span>
+          <button class="icon-button" id="refreshRuns" aria-label="Refresh runs">&#8635;</button>
+        </div>
+        <div id="runList" class="run-list"></div>
+        <div class="method-note">
+          <span class="method-index">01</span>
+          <p>Recommendations always route to a person. Evidence replaces invented confidence.</p>
+        </div>
+      </aside>
+
+      <section class="workspace" id="workspace">
+        <div class="welcome" id="welcome">
+          <div class="welcome-copy">
+            <span class="eyebrow">Questionable sales, made inspectable</span>
+            <h1>Review the evidence.<br><em>Not a mystery score.</em></h1>
+            <p>Upload a PriceCharting CSV to compare each sale against catalog, image, condition, finish, language, and printing evidence.</p>
+            <button class="button button-primary button-large" id="welcomeUpload">Upload a sales CSV</button>
+          </div>
+          <div class="welcome-diagram" aria-label="Review workflow">
+            <div><span>1</span> Sale export</div>
+            <i></i>
+            <div><span>2</span> Evidence review</div>
+            <i></i>
+            <div><span>3</span> Human decision</div>
+          </div>
+        </div>
+
+        <div id="runWorkspace" class="run-workspace hidden">
+          <section class="run-header">
+            <div>
+              <div class="run-kicker">
+                <span id="runMode">Multimodal</span>
+                <span class="dot"></span>
+                <span id="runId">Run</span>
+              </div>
+              <h1 id="runTitle">Review run</h1>
+              <p id="runProgressText">Preparing evidence</p>
+            </div>
+            <div class="run-header-actions">
+              <a class="button button-quiet" id="exportButton" href="#">Export CSV</a>
+              <button class="button button-primary" id="headerUpload">New run</button>
+            </div>
+          </section>
+
+          <div class="run-version-notice hidden" id="runVersionNotice"></div>
+
+          <div class="progress-track" aria-label="Run progress"><span id="progressBar"></span></div>
+
+          <section class="stat-grid" id="statGrid"></section>
+
+          <section class="review-grid">
+            <div class="queue-panel">
+              <div class="queue-tools">
+                <div>
+                  <span class="eyebrow">Review queue</span>
+                  <strong id="queueCount">0 sales</strong>
+                </div>
+                <label class="search-box">
+                  <span>&#8981;</span>
+                  <input id="searchInput" type="search" placeholder="Search ID or title">
+                </label>
+              </div>
+              <div class="filters" id="filters">
+                <button class="filter active" data-action="">All</button>
+                <button class="filter" data-action="keep">Keep</button>
+                <button class="filter" data-action="delete">Delete</button>
+                <button class="filter" data-action="change_condition">Condition</button>
+                <button class="filter" data-action="reassign_product">Reassign</button>
+                <button class="filter" data-action="human_review">No final action</button>
+              </div>
+              <div id="reviewList" class="review-list"></div>
+            </div>
+
+            <article class="detail-panel" id="detailPanel">
+              <div class="detail-empty">
+                <span>&larr;</span>
+                <h2>Select a sale</h2>
+                <p>Open a queue item to inspect its listing, catalog match, and evidence.</p>
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="uploadDialog" class="dialog">
+      <form method="dialog" class="dialog-card" id="uploadForm">
+        <div class="dialog-heading">
+          <div>
+            <span class="eyebrow">Create review run</span>
+            <h2>Bring a sales feed</h2>
+          </div>
+          <button class="icon-button close-dialog" type="button" aria-label="Close">&times;</button>
+        </div>
+
+        <label class="drop-zone" id="dropZone">
+          <input id="fileInput" type="file" accept=".csv,text/csv">
+          <span class="drop-icon">CSV</span>
+          <strong id="dropTitle">Drop a PriceCharting export here</strong>
+          <small id="dropHint">or choose a file from this computer</small>
+        </label>
+
+        <div class="form-grid">
+          <label>
+            Review mode
+            <select id="modeInput">
+              <option value="multimodal">Gemini + image evidence</option>
+              <option value="rules">Deterministic rules only</option>
+            </select>
+          </label>
+          <label>
+            Row selection
+            <select id="rowSelectionMode">
+              <option value="random">Random sample</option>
+              <option value="specific">Choose specific rows</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="random-sample-control" id="randomSampleControl">
+          <label>
+            Random rows to score
+            <input id="randomSampleSize" type="number" min="1" max="100" value="15">
+          </label>
+          <p>Rows are sampled from the entire feed. The run records its random seed so the selection can be reproduced.</p>
+        </div>
+
+        <section class="row-selector hidden" id="rowSelector" aria-labelledby="rowSelectorTitle">
+          <div class="row-selector-heading">
+            <div>
+              <span class="eyebrow">Choose what gets scored</span>
+              <strong id="rowSelectorTitle">Select feed rows</strong>
+            </div>
+            <span id="selectedRowCount">0 selected</span>
+          </div>
+          <div class="row-selector-tools">
+            <label class="row-search">
+              <span>&#8981;</span>
+              <input id="rowSearchInput" type="search" placeholder="Search listing ID or title">
+            </label>
+            <button class="button button-quiet row-tool-button" id="selectVisibleRows" type="button">Select visible</button>
+            <button class="button button-quiet row-tool-button" id="clearSelectedRows" type="button">Clear</button>
+          </div>
+          <div class="selectable-row-list" id="selectableRowList"></div>
+          <p class="row-selector-note" id="rowSelectorNote"></p>
+        </section>
+
+        <div class="callout">
+          <strong>Human review stays on.</strong>
+          <span>The model receives sale and public catalog evidence, never the historical reviewer outcome.</span>
+        </div>
+
+        <p class="form-error hidden" id="uploadError"></p>
+        <div class="dialog-actions">
+          <button class="button button-quiet close-dialog" type="button">Cancel</button>
+          <button class="button button-primary" id="startRunButton" type="submit">Start review</button>
+        </div>
+      </form>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/static/app.js?v=20260810-12" defer></script>
+  </body>
+</html>

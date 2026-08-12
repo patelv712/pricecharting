@@ -1,0 +1,136 @@
+{
+  "assigned_product": {
+    "catalog": {
+      "card_number": "#45",
+      "description": "none Ungraded $3.15",
+      "error": null,
+      "image": {
+        "available": true,
+        "byte_length": 12961,
+        "content_type": "image/jpeg",
+        "error": null,
+        "sha256": "5baa102aefc507c43c4f29942bebde576e1bcfbf929e91a79b39c265e722c6ba",
+        "usable": true
+      },
+      "image_url": "https://storage.googleapis.com/images.pricecharting.com/3cwlcsch2uagnu2z/240.jpg",
+      "notes": "Non-holo deck exclusive",
+      "page_url": "https://www.pricecharting.com/game/pokemon-perfect-order/tyrantrum-45",
+      "product_id_verified": true,
+      "schema_version": 2
+    },
+    "product_id": "12584352",
+    "product_name": "Tyrantrum #45"
+  },
+  "candidate_finishes": [
+    {
+      "catalog_verified": false,
+      "product_id": "12584352",
+      "product_name": "Tyrantrum #45"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "12368512",
+      "product_name": "Tyrantrum [Holo] #45"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "12385647",
+      "product_name": "Tyrantrum [Reverse Holo] #45"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "12368517",
+      "product_name": "Scatterbug #7"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "12368558",
+      "product_name": "Spinarak #1"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "12368561",
+      "product_name": "Shaymin #3"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "12368564",
+      "product_name": "Servine #5"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "12368651",
+      "product_name": "Ariados #2"
+    }
+  ],
+  "identifier": "157864951321",
+  "prompt_version": "2026-08-10-targeted-finish-v1",
+  "resolution": {
+    "assigned_finish": "regular",
+    "evidence": [
+      {
+        "fact": "Assigned catalog explicitly identifies regular.",
+        "finish": "regular",
+        "source": "assigned_catalog_metadata"
+      },
+      {
+        "fact": "The left border of the card shows a clear rainbow reflective shine, which is characteristic of a reverse holo finish since it appears outside the illustration window.",
+        "finish": "reverse_holo",
+        "source": "targeted_visual_review"
+      },
+      {
+        "fact": "PriceCharting candidate 12385647 is the unique verified reverse_holo sibling.",
+        "finish": "reverse_holo",
+        "source": "verified_replacement_catalog"
+      }
+    ],
+    "finish_match": "mismatch",
+    "image_features": {
+      "aspect_ratio": 0.7025,
+      "card_like_aspect": true,
+      "crop_paths": {
+        "card_body": "cache/finish-crops/01540bd72ee0/card_body.jpg",
+        "full": "cache/finish-crops/01540bd72ee0/full.jpg",
+        "illustration": "cache/finish-crops/01540bd72ee0/illustration.jpg",
+        "outer_border": "cache/finish-crops/01540bd72ee0/outer_border.jpg"
+      },
+      "error": null,
+      "height": 1600,
+      "highlight_fraction": 0.006163,
+      "image_sha256": "01540bd72ee0",
+      "luminance_stdev": 0.196387,
+      "saturation_mean": 0.558046,
+      "saturation_stdev": 0.306529,
+      "width": 1124
+    },
+    "observed_finish": "reverse_holo",
+    "provider_metadata": {
+      "billable_output_tokens": 541,
+      "estimated_cost_usd": 0.023364,
+      "input_tokens": 8436,
+      "latency_ms": 8876,
+      "model": "gemini-3.1-pro-preview",
+      "output_tokens": 95,
+      "pricing_version": "google-gemini-api-2026-08-10",
+      "prompt_version": "2026-08-10-targeted-finish-v1",
+      "provider": "google-gemini-openai-compatible-transport",
+      "total_tokens": 8977
+    },
+    "rationale_codes": [
+      "targeted_visual_finish",
+      "finish_mismatch",
+      "unique_verified_finish_replacement"
+    ],
+    "replacement_product_id": "12385647",
+    "requires_human_review": true,
+    "visual": {
+      "evidence_regions": [
+        "border"
+      ],
+      "matching_candidate_id": "12385647",
+      "observed_finish": "reverse_holo",
+      "reason": "The left border of the card shows a clear rainbow reflective shine, which is characteristic of a reverse holo finish since it appears outside the illustration window.",
+      "visually_determinable": true
+    }
+  }
+}

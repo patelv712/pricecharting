@@ -1,0 +1,479 @@
+{
+  "evidence": {
+    "catalog": {
+      "card_number": "#16",
+      "description": "Holo Ungraded $18.03",
+      "error": null,
+      "image": {
+        "available": true,
+        "byte_length": 11991,
+        "cache_path": "cache/images/catalog-920639-adc3d3312de0.img",
+        "content_type": "image/jpeg",
+        "error": null,
+        "sha256": "1b7e4dbb847407a6cebe8c24a30e3b05c1cf86fe3bb75624f438da2d2b649bbd",
+        "usable": true
+      },
+      "image_url": "https://storage.googleapis.com/images.pricecharting.com/3hgycxylb5bydfnr/240.jpg",
+      "notes": "none",
+      "page_url": "https://www.pricecharting.com/game/pokemon-mysterious-treasures/typhlosion-16",
+      "product_id_verified": true,
+      "schema_version": 2
+    },
+    "derived": {
+      "catalog_identity_markers": {},
+      "deletion_flags": [],
+      "evidence_count": 4,
+      "extracted_grade": 10.0,
+      "extracted_grading_company": "PSA",
+      "identity_conflicts": [],
+      "identity_warnings": [
+        "finish_catalog_unspecified:sale=holo",
+        "catalog_variant_family_ambiguous:dimensions=finish:siblings=920764"
+      ],
+      "missing_product_tokens": [],
+      "nearest_condition_id": 8,
+      "nearest_condition_ratio": 4.854353,
+      "original_condition_price": 47500,
+      "sale_identity_markers": {
+        "finish": [
+          "holo"
+        ]
+      },
+      "second_nearest_condition_ratio": 6.315768,
+      "title_product_overlap": 1.0,
+      "title_supported_condition_id": 7
+    },
+    "finish_resolution": {
+      "assigned_finish": "holo",
+      "evidence": [
+        {
+          "fact": "Assigned catalog explicitly identifies holo.",
+          "finish": "holo",
+          "source": "assigned_catalog_metadata"
+        },
+        {
+          "fact": "Listing title explicitly identifies holo.",
+          "finish": "holo",
+          "source": "listing_title"
+        },
+        {
+          "fact": "A reflective foil treatment featuring a distinct pattern of stars and circles is visible within the illustration window, indicating a cosmos holo finish.",
+          "finish": "cosmos_holo",
+          "source": "targeted_visual_review"
+        },
+        {
+          "fact": "Visual cosmos pattern is treated as Holo identity because this verified PriceCharting family has no separate Cosmos Holo sibling.",
+          "finish": "holo",
+          "source": "catalog_finish_taxonomy"
+        }
+      ],
+      "finish_match": "match",
+      "image_features": {
+        "aspect_ratio": 0.673774,
+        "card_like_aspect": true,
+        "crop_paths": {
+          "card_body": "cache/finish-crops/c2f29b2f01a6/card_body.jpg",
+          "full": "cache/finish-crops/c2f29b2f01a6/full.jpg",
+          "illustration": "cache/finish-crops/c2f29b2f01a6/illustration.jpg",
+          "outer_border": "cache/finish-crops/c2f29b2f01a6/outer_border.jpg"
+        },
+        "error": null,
+        "height": 1407,
+        "highlight_fraction": 0.003225,
+        "image_sha256": "c2f29b2f01a6",
+        "luminance_stdev": 0.241824,
+        "saturation_mean": 0.262042,
+        "saturation_stdev": 0.27717,
+        "width": 948
+      },
+      "observed_finish": "holo",
+      "policy_version": "2026-08-10-finish-resolution-v2",
+      "provider_metadata": {
+        "attempt_count": 1,
+        "billable_output_tokens": 2322,
+        "cost_estimate_scope": "successful_response",
+        "estimated_cost_usd": 0.046984,
+        "input_tokens": 9560,
+        "latency_ms": 29581,
+        "model": "gemini-3.1-pro-preview",
+        "output_tokens": 89,
+        "pricing_version": "google-gemini-api-2026-08-10",
+        "prompt_version": "2026-08-10-targeted-finish-v2",
+        "provider": "google-gemini-openai-compatible-transport",
+        "total_tokens": 11882
+      },
+      "rationale_codes": [
+        "explicit_listing_finish",
+        "targeted_visual_finish",
+        "visual_cosmos_normalized_to_catalog_holo",
+        "title_visual_finish_agreement",
+        "finish_match"
+      ],
+      "replacement_product_id": null,
+      "requires_human_review": true,
+      "visual": {
+        "evidence_regions": [
+          "illustration"
+        ],
+        "matching_candidate_id": null,
+        "observed_finish": "cosmos_holo",
+        "reason": "A reflective foil treatment featuring a distinct pattern of stars and circles is visible within the illustration window, indicating a cosmos holo finish.",
+        "visually_determinable": true
+      }
+    },
+    "image": {
+      "available": true,
+      "byte_length": 391310,
+      "cache_path": "cache/images/127658912817-c2f29b2f01a6.img",
+      "content_type": "image/jpeg",
+      "error": null,
+      "sha256": "53bac576b8e48caa576edebeed56d09c3c92c4c5e76604d3aa2ebc8d6080ffe2",
+      "usable": true
+    },
+    "product": {
+      "console_name": "Pokemon Mysterious Treasures",
+      "genre": "Pokemon Card",
+      "identifiers": {
+        "tcg-id": "90105"
+      },
+      "price_anchors": {
+        "1": 1280,
+        "17": 10978,
+        "18": 28500,
+        "2": 4700,
+        "3": 3200,
+        "5": 12790,
+        "6": 14100,
+        "7": 47500,
+        "8": 61800
+      },
+      "product_id": "920639",
+      "product_name": "Typhlosion #16",
+      "release_date": "2007-08-22",
+      "sales_volume": 91,
+      "source": "api-cache"
+    },
+    "replacement_candidates": [
+      {
+        "catalog": {
+          "card_number": "#16",
+          "description": "none Ungraded $14.51",
+          "error": null,
+          "image": {
+            "available": true,
+            "byte_length": 11124,
+            "cache_path": "cache/images/catalog-762858-b70a8a19d5d9.img",
+            "content_type": "image/jpeg",
+            "error": null,
+            "sha256": "81b1a55ffb7c58e95a56dc9f7b967d213d5e443a7f997e53099691fefa690d99",
+            "usable": true
+          },
+          "image_url": "https://storage.googleapis.com/images.pricecharting.com/a96c8a91b148d0bdb13897746f37c04a2d081f97122339fdfdb64c04476ffcc0/240.jpg",
+          "notes": "none",
+          "page_url": "https://www.pricecharting.com/game/pokemon-pop-series-8/riolu-holo-16",
+          "product_id_verified": true,
+          "schema_version": 2
+        },
+        "console_name": "Pokemon POP Series 8",
+        "product_id": "762858",
+        "product_name": "Riolu [Holo] #16",
+        "retrieval_score": 35,
+        "score_components": [
+          "token_f1=27/60",
+          "finish_match=+8"
+        ]
+      },
+      {
+        "catalog": null,
+        "console_name": "Pokemon Mysterious Treasures",
+        "product_id": "920639",
+        "product_name": "Typhlosion #16",
+        "retrieval_score": 35,
+        "score_components": [
+          "token_f1=35/60",
+          "currently_assigned"
+        ]
+      },
+      {
+        "catalog": {
+          "card_number": "#17/P",
+          "description": "none Ungraded $568.75",
+          "error": null,
+          "image": {
+            "available": true,
+            "byte_length": 11478,
+            "cache_path": "cache/images/catalog-6001216-c13d04b02ad5.img",
+            "content_type": "image/jpeg",
+            "error": null,
+            "sha256": "a280f305ff8c1955600338541f92ccc40688c06fe038f8e688e56df62b044bea",
+            "usable": true
+          },
+          "image_url": "https://storage.googleapis.com/images.pricecharting.com/ufiobctl4i5h4qax/240.jpg",
+          "notes": "none",
+          "page_url": "https://www.pricecharting.com/game/pokemon-japanese-promo/typhlosion-holo-17-p",
+          "product_id_verified": true,
+          "schema_version": 2
+        },
+        "console_name": "Pokemon Japanese Promo",
+        "product_id": "6001216",
+        "product_name": "Typhlosion [Holo] #17/P",
+        "retrieval_score": 28,
+        "score_components": [
+          "token_f1=20/60",
+          "finish_match=+8"
+        ]
+      },
+      {
+        "catalog": {
+          "card_number": "#11",
+          "description": "none Ungraded $4.50",
+          "error": null,
+          "image": {
+            "available": true,
+            "byte_length": 12125,
+            "cache_path": "cache/images/catalog-920634-1fc2310c0ccf.img",
+            "content_type": "image/jpeg",
+            "error": null,
+            "sha256": "2801634423cc8cb57c847b92808f4903682ef1beecaccdc2f9d1d5b1a360c652",
+            "usable": true
+          },
+          "image_url": "https://storage.googleapis.com/images.pricecharting.com/d318512c2c9e09ecd8302a9b87e4d789ce8332bd21c32065273236bb5175595f/240.jpg",
+          "notes": "none",
+          "page_url": "https://www.pricecharting.com/game/pokemon-mysterious-treasures/lumineon-11",
+          "product_id_verified": true,
+          "schema_version": 2
+        },
+        "console_name": "Pokemon Mysterious Treasures",
+        "product_id": "920634",
+        "product_name": "Lumineon #11",
+        "retrieval_score": 28,
+        "score_components": [
+          "token_f1=28/60"
+        ]
+      },
+      {
+        "catalog": {
+          "card_number": "#16/ ADV-P",
+          "description": "none Ungraded $15.46",
+          "error": null,
+          "image": {
+            "available": true,
+            "byte_length": 8987,
+            "cache_path": "cache/images/catalog-7374563-c5a924f66f03.img",
+            "content_type": "image/jpeg",
+            "error": null,
+            "sha256": "acb68b44e3641b812f89704ae9964db9df93cf47943f3545396cbc747182c4af",
+            "usable": true
+          },
+          "image_url": "https://storage.googleapis.com/images.pricecharting.com/h4ygxx6ujeippwx6/240.jpg",
+          "notes": "none",
+          "page_url": "https://www.pricecharting.com/game/pokemon-japanese-promo/treecko-holo-16-adv-p",
+          "product_id_verified": true,
+          "schema_version": 2
+        },
+        "console_name": "Pokemon Japanese Promo",
+        "product_id": "7374563",
+        "product_name": "Treecko [Holo] #16/ ADV-P",
+        "retrieval_score": 27,
+        "score_components": [
+          "token_f1=19/60",
+          "finish_match=+8"
+        ]
+      },
+      {
+        "catalog": null,
+        "console_name": "Pokemon Mysterious Treasures",
+        "product_id": "920764",
+        "product_name": "Typhlosion [Reverse Holo] #16",
+        "retrieval_score": 26,
+        "score_components": [
+          "token_f1=38/60",
+          "finish_conflict=-12"
+        ]
+      },
+      {
+        "catalog": null,
+        "console_name": "Pokemon Japanese Mysterious Mountains",
+        "product_id": "3438699",
+        "product_name": "Arcanine #16",
+        "retrieval_score": 20,
+        "score_components": [
+          "token_f1=20/60"
+        ]
+      },
+      {
+        "catalog": null,
+        "console_name": "Pokemon Japanese SoulSilver Collection",
+        "product_id": "3460028",
+        "product_name": "Typhlosion #16",
+        "retrieval_score": 20,
+        "score_components": [
+          "token_f1=20/60"
+        ]
+      }
+    ],
+    "sale": {
+      "broad_category": "trading-cards",
+      "identifier": "127658912817",
+      "most_recent_report": "2026-06-15T16:55:33Z",
+      "original_condition_id": 7,
+      "picture_url": "https://i.ebayimg.com/images/g/nNQAAeSwLwhpf5Oq/s-l1600.jpg",
+      "product_id": "920639",
+      "product_title": "Typhlosion #16",
+      "review_date": "2026-06-17T09:23:40Z",
+      "sale_amount_pennies": 299999,
+      "sale_title": "PSA 10 Pokemon Typhlosion D & P Holo Rare #16/123 Mysterious Treasures POP 11 #16",
+      "score": 445
+    }
+  },
+  "identifier": "127658912817",
+  "result": {
+    "catalog_comparison": "match",
+    "consistency": {
+      "image_vs_metadata": "match",
+      "price_vs_condition": "match",
+      "title_vs_image": "match"
+    },
+    "decision": "ignored",
+    "deterministic_evidence": {
+      "catalog_identity_markers": {},
+      "catalog_image_available": true,
+      "catalog_price_anchor_count": 9,
+      "catalog_product_id_verified": true,
+      "deletion_flags": [],
+      "identity_conflicts": [],
+      "identity_warnings": [
+        "finish_catalog_unspecified:sale=holo",
+        "catalog_variant_family_ambiguous:dimensions=finish:siblings=920764"
+      ],
+      "image_available": true,
+      "image_usable": true,
+      "sale_identity_markers": {
+        "finish": [
+          "holo"
+        ]
+      },
+      "title_product_overlap": 1.0,
+      "title_supported_condition_id": 7
+    },
+    "estimated_cost_usd": null,
+    "finish_resolution": {
+      "assigned_finish": "holo",
+      "evidence": [
+        {
+          "fact": "Assigned catalog explicitly identifies holo.",
+          "finish": "holo",
+          "source": "assigned_catalog_metadata"
+        },
+        {
+          "fact": "Listing title explicitly identifies holo.",
+          "finish": "holo",
+          "source": "listing_title"
+        },
+        {
+          "fact": "A reflective foil treatment featuring a distinct pattern of stars and circles is visible within the illustration window, indicating a cosmos holo finish.",
+          "finish": "cosmos_holo",
+          "source": "targeted_visual_review"
+        },
+        {
+          "fact": "Visual cosmos pattern is treated as Holo identity because this verified PriceCharting family has no separate Cosmos Holo sibling.",
+          "finish": "holo",
+          "source": "catalog_finish_taxonomy"
+        }
+      ],
+      "finish_match": "match",
+      "image_features": {
+        "aspect_ratio": 0.673774,
+        "card_like_aspect": true,
+        "crop_paths": {
+          "card_body": "cache/finish-crops/c2f29b2f01a6/card_body.jpg",
+          "full": "cache/finish-crops/c2f29b2f01a6/full.jpg",
+          "illustration": "cache/finish-crops/c2f29b2f01a6/illustration.jpg",
+          "outer_border": "cache/finish-crops/c2f29b2f01a6/outer_border.jpg"
+        },
+        "error": null,
+        "height": 1407,
+        "highlight_fraction": 0.003225,
+        "image_sha256": "c2f29b2f01a6",
+        "luminance_stdev": 0.241824,
+        "saturation_mean": 0.262042,
+        "saturation_stdev": 0.27717,
+        "width": 948
+      },
+      "observed_finish": "holo",
+      "policy_version": "2026-08-10-finish-resolution-v2",
+      "provider_metadata": {
+        "attempt_count": 1,
+        "billable_output_tokens": 2322,
+        "cost_estimate_scope": "successful_response",
+        "estimated_cost_usd": 0.046984,
+        "input_tokens": 9560,
+        "latency_ms": 29581,
+        "model": "gemini-3.1-pro-preview",
+        "output_tokens": 89,
+        "pricing_version": "google-gemini-api-2026-08-10",
+        "prompt_version": "2026-08-10-targeted-finish-v2",
+        "provider": "google-gemini-openai-compatible-transport",
+        "total_tokens": 11882
+      },
+      "rationale_codes": [
+        "explicit_listing_finish",
+        "targeted_visual_finish",
+        "visual_cosmos_normalized_to_catalog_holo",
+        "title_visual_finish_agreement",
+        "finish_match"
+      ],
+      "replacement_product_id": null,
+      "requires_human_review": true,
+      "visual": {
+        "evidence_regions": [
+          "illustration"
+        ],
+        "matching_candidate_id": null,
+        "observed_finish": "cosmos_holo",
+        "reason": "A reflective foil treatment featuring a distinct pattern of stars and circles is visible within the illustration window, indicating a cosmos holo finish.",
+        "visually_determinable": true
+      }
+    },
+    "identity_comparison": {
+      "artwork": "match",
+      "event_or_release": "match",
+      "finish": "match",
+      "language": "match",
+      "object_type": "match",
+      "printing_or_parallel": "match",
+      "quantity_and_packaging": "match",
+      "set_and_card_number": "match"
+    },
+    "input_tokens": 10893,
+    "latency_ms": 6135,
+    "model": "gemini-3.6-flash",
+    "needs_modification": false,
+    "output_tokens": 393,
+    "predicted_condition_id": null,
+    "provider": "google-gemini-openai-compatible-transport",
+    "rationale_codes": [
+      "product_match",
+      "condition_match",
+      "discarded_irrelevant_predicted_condition_id"
+    ],
+    "reason": "The listing title, slab label, and visual evidence confirm a PSA 10 Typhlosion #16 Holo from Mysterious Treasures, matching the assigned product and condition.",
+    "replacement_comparison": "not_available",
+    "replacement_product_id": null,
+    "route": "human_review",
+    "visual": {
+      "cards_visible_count": 1,
+      "damage_signs": false,
+      "finish": "holo",
+      "grading_company": "PSA",
+      "image_usable": true,
+      "is_custom_or_proxy": false,
+      "is_graded_slab": true,
+      "is_lot_or_bundle": false,
+      "language_markers": [
+        "English"
+      ],
+      "visible_grade": "10"
+    }
+  }
+}

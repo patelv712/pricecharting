@@ -1,0 +1,124 @@
+{
+  "assigned_product": {
+    "catalog": {
+      "card_number": "#42",
+      "description": "none Ungraded $3.47",
+      "error": null,
+      "image": {
+        "available": true,
+        "byte_length": 11988,
+        "content_type": "image/jpeg",
+        "error": null,
+        "sha256": "ceb265a251e559bbaac35e8eca54105c4895dbdcb9b7ff7777d46c641388368f",
+        "usable": true
+      },
+      "image_url": "https://storage.googleapis.com/images.pricecharting.com/370d1865003ccb246762c3473070094a093d589adb433eb04a47c6056929c673/240.jpg",
+      "notes": "none",
+      "page_url": "https://www.pricecharting.com/game/pokemon-xy/pikachu-42",
+      "product_id_verified": true,
+      "schema_version": 2
+    },
+    "product_id": "806540",
+    "product_name": "Pikachu #42"
+  },
+  "candidate_finishes": [
+    {
+      "catalog_verified": false,
+      "product_id": "806540",
+      "product_name": "Pikachu #42"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "7051675",
+      "product_name": "Pikachu [Cosmos Holo] #42"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "806664",
+      "product_name": "Pikachu [Reverse Holo] #42"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "6905972",
+      "product_name": "Pikachu #1/XY-P"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "8355071",
+      "product_name": "Sealed Knockout Collection"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "11742956",
+      "product_name": "Pikachu [Fujishima] #XY-P"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "3473554",
+      "product_name": "Pikachu #29"
+    },
+    {
+      "catalog_verified": true,
+      "product_id": "5108207",
+      "product_name": "Pikachu #206/XY-P"
+    }
+  ],
+  "identifier": "177979887250",
+  "prompt_version": "2026-08-10-targeted-finish-v1",
+  "resolution": {
+    "assigned_finish": "regular",
+    "evidence": [
+      {
+        "fact": "Metadata-complete unsuffixed assigned product has separately named finish siblings in the same PriceCharting family and no finish marker of its own.",
+        "finish": "regular",
+        "source": "catalog_variant_family"
+      },
+      {
+        "fact": "The illustration window clearly shows a reflective star and circle pattern, which is the defining characteristic of a cosmos holo finish. The card body outside the illustration is non-reflective.",
+        "finish": "cosmos_holo",
+        "source": "targeted_visual_review"
+      },
+      {
+        "fact": "PriceCharting candidate 7051675 is the unique verified cosmos_holo sibling.",
+        "finish": "cosmos_holo",
+        "source": "verified_replacement_catalog"
+      }
+    ],
+    "finish_match": "mismatch",
+    "image_features": {
+      "aspect_ratio": 0.75,
+      "card_like_aspect": true,
+      "crop_paths": {
+        "card_body": "cache/finish-crops/e67bf759a832/card_body.jpg",
+        "full": "cache/finish-crops/e67bf759a832/full.jpg",
+        "illustration": "cache/finish-crops/e67bf759a832/illustration.jpg",
+        "outer_border": "cache/finish-crops/e67bf759a832/outer_border.jpg"
+      },
+      "error": null,
+      "height": 1600,
+      "highlight_fraction": 0.000732,
+      "image_sha256": "e67bf759a832",
+      "luminance_stdev": 0.294904,
+      "saturation_mean": 0.374126,
+      "saturation_stdev": 0.421434,
+      "width": 1200
+    },
+    "observed_finish": "cosmos_holo",
+    "rationale_codes": [
+      "targeted_visual_finish",
+      "finish_mismatch",
+      "unique_verified_finish_replacement"
+    ],
+    "replacement_product_id": "7051675",
+    "requires_human_review": true,
+    "visual": {
+      "evidence_regions": [
+        "illustration"
+      ],
+      "matching_candidate_id": "7051675",
+      "observed_finish": "cosmos_holo",
+      "reason": "The illustration window clearly shows a reflective star and circle pattern, which is the defining characteristic of a cosmos holo finish. The card body outside the illustration is non-reflective.",
+      "visually_determinable": true
+    }
+  }
+}
