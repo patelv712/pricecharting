@@ -43,22 +43,14 @@ FINISH_LLM_MODEL=
 
 ## Verification
 
-Run the offline handoff check:
+Run the automated test suite:
 
 ```bash
-./scripts/verify_handoff.sh
+.venv/bin/pytest
 ```
 
-It runs the test suite, validates the synthetic sample, and confirms policy metadata. It makes no
-PriceCharting, eBay, or Gemini calls and spends no API credits.
-
-The deeper artifact demonstration requires an authorized copy of the original sales export:
-
-```bash
-SALES_CSV=/path/to/PRICECHARTING.csv ./scripts/demo_poc.sh
-```
-
-The source export is not included in this repository.
+Tests make no PriceCharting, eBay, or Gemini calls and spend no API credits. The source sales export
+and generated evaluation artifacts are intentionally not included in this repository.
 
 ## Console Demonstration
 
@@ -120,7 +112,6 @@ shadow deployment with independently adjudicated outcomes.
 ## Primary Documents
 
 - `docs/questionable-sales-review-design.md`: architecture and evaluation methodology
-- `docs/poc-executive-report.md`: current decision and evidence boundary
 - `docs/full-discrepancy-audit.md`: manual discrepancy analysis
 - `docs/finish-classification-design.md`: finish and foil subsystem
 - `README.md`: commands and developer setup

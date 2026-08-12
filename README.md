@@ -43,47 +43,25 @@ stored in this repository or in proof artifacts.
 # Validate and profile the complete labeled export.
 .venv/bin/pcqc profile \
   --sales /path/to/PRICECHARTING.csv \
-  --output reports/proof/data-profile.json
-
-# Evaluate the rules baseline on a product-grouped holdout.
-.venv/bin/pcqc baseline \
-  --sales /path/to/PRICECHARTING.csv \
-  --price-guide /path/to/pokemon-price-guide.csv \
-  --output-dir reports/proof
+  --output /tmp/data-profile.json
 
 # Prove live product enrichment, image retrieval, evidence, and review.
 .venv/bin/pcqc live-smoke \
   --sales /path/to/PRICECHARTING.csv \
-  --output reports/proof/live-smoke.json
+  --output /tmp/live-smoke.json
 
 # Review one export row with either rules or a configured multimodal model.
 .venv/bin/pcqc review \
   --sales /path/to/PRICECHARTING.csv \
   --identifier 389374866266 \
   --provider llm \
-  --output reports/single-review.json
+  --output /tmp/single-review.json
 
 # Inspect only the finish-resolution subsystem for one row.
 .venv/bin/pcqc finish-review \
   --sales /path/to/PRICECHARTING.csv \
   --identifier 157864951321 \
-  --output reports/finish-review.json
-
-# Evaluate independently adjudicated finish cases.
-.venv/bin/pcqc finish-evaluate \
-  --benchmark evaluation/finish-regression-seed.json \
-  --results-dir reports/finish-regression \
-  --output reports/finish-regression/report.json
-
-# Run a checkpointed validation pilot. Previously inspected products are forced
-# into development and cannot enter validation or the locked final holdout.
-.venv/bin/pcqc multimodal-eval \
-  --sales /path/to/PRICECHARTING.csv \
-  --output-dir reports/pilot-v3 \
-  --per-target 5 \
-  --exclude-manifest reports/pilot/gemini-pilot-manifest.json \
-  --exclude-manifest reports/pilot-v1/gemini-pilot-manifest.json \
-  --exclude-manifest reports/pilot-v2/gemini-pilot-manifest.json
+  --output /tmp/finish-review.json
 
 # Start the API.
 .venv/bin/pcqc serve
@@ -136,23 +114,10 @@ only after `LLM_API_KEY` and `LLM_MODEL` are configured.
 
 ```bash
 .venv/bin/pytest --cov=pcqc --cov-report=term-missing
-./scripts/verify_handoff.sh
-SALES_CSV=/path/to/PRICECHARTING.csv ./scripts/demo_poc.sh
 ```
-
-`demo_poc.sh` verifies the completed artifacts and rebuilds the paired comparison offline. It does
-not call Gemini, spend API credits, or rerun the locked final holdout. It requires an authorized
-copy of the original sales export because that dataset is intentionally not committed.
 
 See [`HANDOFF.md`](HANDOFF.md) for the supported delivery boundary, recipient setup, credential
 ownership, demonstration workflow, and known limitations.
-
-Current proof artifacts:
-
-- `reports/proof/data-profile.json`: complete 10,000-row data profile.
-- `reports/proof/baseline-report.json`: diagnostic grouped-split baseline metrics; not the locked
-  final evaluation because examples from that earlier split informed prompt development.
-- `reports/proof/live-smoke.json`: sanitized live API/image result; no credentials or cached image.
 
 The rules result is a floor, not a production candidate. Its low holdout recall is expected and
 is evidence for testing a multimodal model rather than a claim that the problem is solved.
@@ -161,10 +126,7 @@ The first Gemini pilot exposed an ambiguous export field and an unsafe self-repo
 design. Paid access is active, but the legacy final metrics are superseded. The dedicated finish
 seed currently contains only three manually inspected development cases, so its perfect regression
 score is not a performance estimate.
-The completed POC decision is in
-[`docs/poc-executive-report.md`](docs/poc-executive-report.md).
-See [`docs/gemini-pilot-findings.md`](docs/gemini-pilot-findings.md) before interpreting any
-multimodal metrics or expanding the run.
+The architecture, evaluation caveats, and discrepancy analysis are retained under `docs/`.
 
 ## Cache and leakage guarantees
 

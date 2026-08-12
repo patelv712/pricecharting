@@ -160,5 +160,5 @@ The development seed contains Tyrantrum reverse holo, Typhlosion holo, and Pikac
 All three currently resolve correctly, including exact replacement for the two mismatches. Because
 the sample size is three and was used during development, this result is not a performance claim.
 
-The integrated Tyrantrum proof is stored at
-`reports/finish-regression/157864951321-integrated.json`.
+The Tyrantrum reverse-holo case remains covered by automated regression tests. Generated evaluation
+artifacts are intentionally excluded from the handoff repository.
