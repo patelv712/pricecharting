@@ -1,0 +1,8 @@
+{
+  "minimum_request_interval_seconds": 60,
+  "requests_per_block": 40,
+  "scheduled_cooldown_seconds": 900,
+  "http_403_cooldown_seconds": 1200,
+  "stop_on_403": true,
+  "stop_on_challenge": true
+}

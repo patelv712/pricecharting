@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Figure Realm Capture</title>
+    <style>
+      body { font: 14px system-ui, sans-serif; margin: 16px; width: 320px; }
+      button { width: 100%; padding: 9px 12px; }
+      label { display: block; margin: 12px 0; }
+      #status { margin-top: 12px; white-space: pre-wrap; color: #333; }
+    </style>
+  </head>
+  <body>
+    <strong>Figure Realm POC Capture</strong>
+    <p>Open the Scooby-Doo universe page, then start the checklist capture.</p>
+    <label><input id="sampleDetails" type="checkbox" checked> Sample one detail page per series</label>
+    <button id="capture" type="button">Capture Scooby-Doo</button>
+    <div id="status" role="status">Ready.</div>
+    <script src="popup.js"></script>
+  </body>
+</html>

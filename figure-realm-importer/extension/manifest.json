@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Figure Realm POC Capture",
+  "version": "0.1.0",
+  "description": "Capture public Figure Realm checklist HTML for the PriceCharting importer POC.",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.figurerealm.com/*", "https://figurerealm.com/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "permissions": ["activeTab"]
+}
